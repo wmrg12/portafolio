@@ -114,7 +114,6 @@ nav {
   color: var(--text-mid);
   padding: .26rem .52rem;
   border-radius: 2rem;
-  transition: all .22s;
   white-space: nowrap;
 }
 
@@ -220,12 +219,10 @@ section {
   font-size: .84rem;
   font-weight: 500;
   box-shadow: var(--shadow);
-  transition: transform .2s, box-shadow .2s;
   white-space: nowrap;
 }
 
 .btn-primary:hover {
-  transform: translateY(-2px);
   box-shadow: 0 14px 38px rgba(39, 43, 0, .25);
 }
 
@@ -237,7 +234,6 @@ section {
   text-decoration: none;
   font-size: .84rem;
   font-weight: 500;
-  transition: all .2s;
   white-space: nowrap;
 }
 
@@ -279,7 +275,6 @@ section {
   display: flex;
   align-items: flex-start;
   gap: .8rem;
-  transition: transform .22s;
 }
 
 .about-card:hover {
@@ -326,7 +321,6 @@ section {
   border-radius: 2rem;
   font-size: .75rem;
   font-weight: 500;
-  transition: transform .18s;
   cursor: default;
 }
 
@@ -369,7 +363,6 @@ section {
   overflow: hidden;
   box-shadow: var(--shadow-card);
   border: 1px solid var(--border);
-  transition: transform .25s, box-shadow .25s;
 }
 
 .project-card:hover {
@@ -443,7 +436,6 @@ section {
   color: var(--olive-dark);
   border-bottom: 1.5px solid var(--olive-mid);
   padding-bottom: 1px;
-  transition: color .2s;
 }
 
 .project-link:hover {
@@ -528,7 +520,6 @@ section {
   border-radius: 2rem;
   font-size: .79rem;
   font-weight: 500;
-  transition: background .2s, transform .2s;
   white-space: nowrap;
 }
 
@@ -549,20 +540,6 @@ footer span {
   color: var(--olive-dark);
   font-weight: 500;
 }
-
-/* ANIMACIONES */
-@keyframes fadeUp {
-  from {
-    opacity: 0;
-    transform: translateY(20px);
-  }
-
-  to {
-    opacity: 1;
-    transform: translateY(0);
-  }
-}
-
 
 /* LANDSCAPE */
 @media (orientation: landscape) and (max-height: 520px) {
@@ -649,7 +626,7 @@ footer span {
   }
 }
 
-/* Móvil pequeño */
+/* Movil pequeno */
 @media (max-width: 360px) {
   .hero-name {
     font-size: 1.75rem;
@@ -689,58 +666,6 @@ footer span {
   .blob-2 {
     width: 200px;
     height: 200px;
-  }
-}
-
-/* Desktop 768px+ */
-@media (min-width: 768px) {
-  :root {
-    --px: 2rem;
-    --py: 2.8rem;
-    --nav-h: 58px;
-  }
-
-  .nav-logo {
-    font-size: 1.2rem;
-  }
-
-  .nav-links {
-    gap: .45rem;
-  }
-
-  .nav-links a {
-    font-size: .82rem;
-    padding: .3rem .72rem;
-  }
-
-  .hero-content {
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-  }
-
-  .hero-avatar {
-    width: 150px;
-    height: 150px;
-  }
-
-  .blob-1 {
-    width: 320px;
-    height: 320px;
-  }
-
-  .blob-2 {
-    width: 250px;
-    height: 250px;
-  }
-
-  .blob-3 {
-    width: 200px;
-    height: 200px;
-  }
-
-  .contact-card {
-    padding: 2.8rem 2.5rem;
   }
 }
 
